@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" type="module" defer>
+        
+    </script>
+</head>
+<body class="light-theme">
+    <header class="header">
+        <div class="name">
+            <h1 class="barry"><i class="bi bi-code-slash"></i>B</h1>
+            <h1>DEV</h1>
+        </div>
+        <div class="HName"><h1>Todo List</h1></div>
+        <div class="change-theme">
+            <span id="dark-light"><i class="bi bi-moon-fill"></i></span>
+        </div>
+    </header>
+    <section class="container pt-5" id="todolist">
+        <form class="form d-flex pb-4">
+            <input required class="form-control" type="text" placeholder="Acheter des patates..." name="title">
+            <button class="btn btn-primary">Ajouter</button>
+        </form>
+        <main>
+            <div class="btn-group mb-4" role="group">
+                <button type="button" class="btn btn-outline-primary active" id="all">Toutes</button>
+                <button type="button" class="btn btn-outline-primary" id="todo">A faire</button>
+                <button type="button" class="btn btn-outline-primary" id="done">Faites</button>
+            </div>
+
+            <ul class="list-group"></ul>
+        </main>
+    </section>
+    <footer class="footer">
+        
+    </footer>
+</body>
+</html>
